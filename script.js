@@ -4,12 +4,12 @@ document.getElementById('start_options').addEventListener('click', () => {
     document.getElementById('game').style.display = 'block';
 });
 
-
 let result;
 document.getElementById('start-btn').addEventListener('click', () => {
     console.log('start');
-    let selected_difficulty = document.querySelector('input[name="difficulty"]:checked').value;
-    if (selected_difficulty === 'withouttimer') {
+    let selected_difficulty = document.querySelector('input[name="difficulty"]:checked');
+
+    if (selected_difficulty && selected_difficulty.value === 'withouttimer') {
         document.getElementById('time').style.display = 'none';
     } else {
         document.getElementById('time').style.display = 'block';
@@ -32,7 +32,7 @@ document.getElementById('start-btn').addEventListener('click', () => {
         } else {
             result = 10 - time;
             result = Math.floor(result * 100) / 100;
-            document.getElementById('result-message').textContent = 'your time is ' + result + ' seconds off';
+            document.getElementById('result-message').textContent = 'Your time is ' + result + ' seconds off';
         }
         document.getElementById('time').style.display = 'block';
     });

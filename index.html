@@ -8,17 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>The Stopwatch Game</h1>
-        <p>Press the start button to start counting!</p>
-        <p>Stop at EXACTLY 10 seconds!</p>
-        <div class="stopwatch">
-            <span id="time">0.00</span>
+        <div id="options">
+            
         </div>
-        <div class="buttons">
-            <button id="start-btn" class="button">Start</button>
-            <button id="stop-btn" class="button" disabled>Stop</button>
+        <div id="game">
+            <h1>The Stopwatch Game</h1>
+            <p>Press the start button to start counting!</p>
+            <p>Stop at EXACTLY 10 seconds!</p>
+            <div class="stopwatch">
+                <span id="time">0.00</span>
+            </div>
+            <div class="buttons">
+                <button id="start-btn" class="button">Start</button>
+                <button id="stop-btn" class="button" disabled>Stop</button>
+            </div>
+            <p id="result-message"></p>
         </div>
-        <p id="result-message"></p>
     </div>
     <script src="script.js"></script>
 </body>

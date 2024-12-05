@@ -51,7 +51,6 @@ p {
     user-select: none;
     cursor: pointer;
     justify-content: center;
-    display: flex;
 }
 
 #start-btn {
@@ -98,4 +97,9 @@ p {
     padding: 10px;
     border-radius: 5px;
     display: none;
+    margin: auto;
+}
+
+#backtohome {
+    background-color: chocolate;
 }

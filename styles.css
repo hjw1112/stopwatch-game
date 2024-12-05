@@ -50,6 +50,8 @@ p {
     color: white;
     user-select: none;
     cursor: pointer;
+    justify-content: center;
+    display: flex;
 }
 
 #start-btn {

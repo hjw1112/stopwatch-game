@@ -49,6 +49,7 @@ p {
     text-align: center;
     color: white;
     user-select: none;
+    cursor: pointer;
 }
 
 #start-btn {
@@ -80,4 +81,19 @@ p {
     margin-top: 10px;
     background-color: #bbefff;
     color:rgb(32, 73, 74);
+}
+
+#start-btn {
+    display: block;
+}
+
+#stop-btn {
+    display: none;
+}
+
+#reset-btn {
+    background-color: #52afdd;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
 }

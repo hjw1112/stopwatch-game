@@ -48,3 +48,6 @@ document.getElementById('reset-btn').addEventListener('click', () => {
     document.getElementById('reset-btn').style.display = 'none';
     document.getElementById('start-btn').style.display = 'block';
 });
+document.getElementById('backtohome').addEventListener('click', ()=>{
+    location.reload()
+})
